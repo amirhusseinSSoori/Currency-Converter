@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string-array name="currency_codes">
+
+        <item>CAD</item>
+        <item>HKD</item>
+    </string-array>
+</resources>
