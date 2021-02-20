@@ -53,25 +53,24 @@ dependencies {
 
 
 
-    def hilt_version = "2.28-alpha"
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    //hilt Dagger
+    implementation "com.google.dagger:hilt-android:2.28-alpha"
+    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
+    kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
 
-    def hilt_viewmodels = "1.0.0-alpha02"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_viewmodels"
-    kapt "androidx.hilt:hilt-compiler:$hilt_viewmodels"
+
+
 
 
 
     //  Coroutines
-    def kotlinx_coroutines_version = "1.4.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
 
     // Coroutine Lifecycle Scopes
-    def coroutine_Lifecycle_Scopes = "2.3.0-rc01"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$coroutine_Lifecycle_Scopes"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$coroutine_Lifecycle_Scopes"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0"
 
 
 
@@ -86,7 +85,9 @@ dependencies {
     // Fragment_ktx
     def fragment_ktx = "1.3.0-rc01"
     implementation "androidx.fragment:fragment-ktx:$fragment_ktx"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.0"
+//    implementation "androidx.lifecycle:lifecycle-extensions-ktx:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.3.0"
 
 
     // retrofit
@@ -96,7 +97,7 @@ dependencies {
 
 
     // Activity KTX for viewModels()
-    implementation "androidx.activity:activity-ktx:1.1.0"
+    implementation "androidx.activity:activity-ktx:1.2.0"
 
 
     // Navigation Componentss
