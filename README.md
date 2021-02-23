@@ -7,6 +7,8 @@
 2. Retrofit
 3. FLOW 
 4. HILT
+5. ViewBinding
+
 
 
 
